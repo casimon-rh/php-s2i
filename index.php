@@ -17,7 +17,7 @@
 
         <?php
 
-        $conn = mysqli_connect('db', $_ENV['DB_USER'], $_ENV['DB_PASSWORD'], "information_schema");
+        $conn = mysqli_connect($_ENV['DB_URL'], $_ENV['DB_USER'], $_ENV['DB_PASSWORD'], "information_schema");
 
         $query = 'SELECT * From KEYWORDS;';
         $result = mysqli_query($conn, $query);
