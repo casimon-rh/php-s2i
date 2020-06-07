@@ -13,7 +13,7 @@
 
 <body>
     <div class="container">
-        <?php echo "<h1>Hello world</h1>"; ?>
+        <?php echo "<h1>Hello world UNAM</h1>"; ?>
 
         <?php
 
