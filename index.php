@@ -19,7 +19,7 @@
 
         $conn = mysqli_connect($_ENV['DB_URL'], $_ENV['DB_USER'], $_ENV['DB_PASSWORD'], "information_schema");
 
-        $query = 'SELECT * From KEYWORDS;';
+        $query = 'SELECT * From KEYWORDS LIMIT 5;';
         $result = mysqli_query($conn, $query);
         echo '<table class="table table-striped">';
         echo '<thead><tr><th></th><th>WORD</th><th>RESERVED</th></tr></thead>';
